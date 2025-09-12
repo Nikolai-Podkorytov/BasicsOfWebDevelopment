@@ -1,3 +1,8 @@
+/* 
+Author: Nikolai Podkorytov
+Date: 2025-09-12
+*/
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -8,59 +13,22 @@ body {
 }
 
 /* Header */
-header {
-    background: linear-gradient(45deg, #43cea2, #185a9d);
-    color: #fff;
-    padding: 20px;
-}
-
-/* Navigation */
-.nav-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 18px;
-    justify-content: center;
-    background: #d0f0c0;
-}
-
-.nav-list li a {
-    text-decoration: none;
+h1 {
     color: #185a9d;
-    font-weight: bold;
+    font-size: 2.5em;
+    margin-top: 40px;
+}
+
+/* Paragraph styles */
+p {
+    color: #333;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+/* Link styles */
+a {
+    color: #43cea2;
+    text-decoration: underline;
     font-size: 1.1em;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background 0.2s, color 0.2s;
-}
-
-.nav-list li a:hover,
-.nav-list a.active {
-    background: #43cea2;
-    color: #fff;
-}
-
-/* Sections */
-section {
-    padding: 18px;
-    margin: 18px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 2px 8px rgba(67, 206, 162, 0.08);
-}
-
-/* Footer */
-footer {
-    background-color: #185a9d;
-    color: #fff;
-    padding: 16px;
-    width: 100%;
-}
-
-/* Responsive Navigation */
-@media (max-width: 600px) {
-    .nav-list {
-        flex-direction: column;
-        gap: 8px;
-    }
 }
