@@ -1,0 +1,31 @@
+/* 
+Author: Nikolai Podkorytov
+Date: 2025-09-18
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+section {
+  margin: 30px 0;
+}
+
+img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+audio, video {
+  display: block;
+  margin: 20px auto;
+}
