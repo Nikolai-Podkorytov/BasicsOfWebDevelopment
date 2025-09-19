@@ -4,60 +4,26 @@ Date: 2025-09-19
 */
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9fafb;
-  color: #2c3e50;
-}
-
-header {
-  background: linear-gradient(90deg, #6a11cb, #2575fc);
-  color: white;
-  padding: 2rem;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
+  font-family: Arial, sans-serif;
+  text-align: center; /* Centers text and inline media */
+  margin: 20px;
 }
 
 section {
-  margin: 2.5rem 0;
+  margin-bottom: 30px; /* Adds spacing between sections */
 }
 
-h2 {
-  color: #34495e;
-  margin-bottom: 1rem;
+img, video, audio {
+  display: block;
+  margin: 0 auto;       /* Centers media elements */
 }
 
 img {
-  max-width: 500px;
   width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  display: block;
-  margin: 0 auto;
+  max-width: 500px;     /* Restricts image size */
+  height: auto;
 }
 
-audio, video {
-  display: block;
-  margin: 20px auto;
-  border-radius: 8px;
-}
-
-.license {
-  font-size: 0.95rem;
-  color: #555;
-  background: #eef2f7;
-  padding: 1rem;
-  border-radius: 8px;
+video {
+  max-width: 500px;     /* Keeps video from being too wide */
 }
