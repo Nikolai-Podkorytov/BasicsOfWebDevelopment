@@ -5,25 +5,37 @@ Date: 2025-09-19
 
 body {
   font-family: Arial, sans-serif;
-  text-align: center; /* Centers text and inline media */
+  text-align: center;
+  /* Centers text and inline media */
   margin: 20px;
 }
 
 section {
-  margin-bottom: 30px; /* Adds spacing between sections */
+  margin-bottom: 30px;
+  /* Adds spacing between sections */
 }
 
-img, video, audio {
+img,
+video,
+audio {
   display: block;
-  margin: 0 auto;       /* Centers media elements */
+  margin: 0 auto;
+  /* Centers media elements */
 }
 
 img {
   width: 100%;
-  max-width: 500px;     /* Restricts image size */
+  max-width: 500px;
+  /* Restricts image size */
   height: auto;
 }
 
 video {
-  max-width: 500px;     /* Keeps video from being too wide */
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  /* replaces width="500" */
+  width: 100%;
+  /* makes it responsive */
+  height: auto;
 }

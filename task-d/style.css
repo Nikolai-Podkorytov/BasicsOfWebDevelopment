@@ -1,0 +1,72 @@
+/* 
+Author: Nikolai Podkorytov
+Date: 2025-09-19
+*/
+
+/* ====== Color Palette: Calm & Professional ====== */
+:root {
+    --background: #f4f6f8;
+    --primary: #1e3a8a;
+    --secondary: #64748b;
+    --accent: #3b82f6;
+}
+
+/* ====== Element Selectors ====== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--secondary);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: var(--primary);
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+/* ====== Class Selectors ====== */
+.box {
+    border: 2px solid var(--primary);
+    padding: 10px;
+    background-color: white;
+}
+
+.highlight {
+    background-color: var(--accent);
+    color: white;
+    padding: 10px;
+}
+
+/* ====== ID Selector ====== */
+#special-message {
+    font-weight: bold;
+    color: var(--accent);
+}
+
+/* ====== Group Selectors ====== */
+h1, h2, h3 {
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 0.5em;
+}
+
+/* ====== Descendant Selectors ====== */
+section ul li {
+    list-style-type: square;
+    color: var(--primary);
+}
+
+/* ====== Attribute Selectors ====== */
+a[target="_blank"] {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+img[alt] {
+    border: 3px solid var(--secondary);
+    max-width: 200px;
+}
