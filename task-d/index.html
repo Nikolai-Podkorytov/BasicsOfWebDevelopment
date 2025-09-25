@@ -2,51 +2,60 @@
 Author: Nikolai Podkorytov
 Date: 2025-09-19
 -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task D - CSS Selectors Demo</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple External CSS/JS Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>Welcome to My Web Page</h1>
+  <h1>This is the first h1 header</h1>
 
-    <header>
-        <h1>Main Heading</h1>
-        <h2>Subheading Example</h2>
-    </header>
+  <p class="first-paragraph"> This is a first paragraph. </p>
 
-    <main>
-        <p id="special-message">This paragraph uses an ID selector.</p>
+  <h2>This is the second h2 header</h2>
+  <p class="second-paragraph">
+    <a href="https://google.com">Visit google</a> Visit google in second paragraph.
+  </p>
 
-        <div class="box">
-            <p>This is inside a div with class <strong>box</strong>.</p>
-        </div>
+  <h3>This is the third h3 header</h3>
+  <p id="third-paragraph">
+    <a href="https://github.com">Visit github</a> Visit github in second paragraph.
+  </p>
 
-        <div class="highlight">
-            <p>This is inside a div with class <strong>highlight</strong>.</p>
-        </div>
+  <p id="dark-paragraph"> This is a dark-paragraph for color toggling. </p>
 
-        <section>
-            <h3>List of Items</h3>
-            <ul>
-                <li>First item</li>
-                <li>Second item</li>
-                <li>Third item</li>
-            </ul>
-        </section>
+  <!-- Новый параграф с уникальным id -->
+  <p id="special-message">This paragraph uses an ID selector.</p>
 
-        <p>Here’s a link: <a href="https://example.com">Regular Link</a></p>
-        <p>Here’s a link with target attribute: 
-            <a href="https://example.com" target="_blank">Visit Example</a>
-        </p>
+  <!-- Два div с разными классами -->
+  <div class="container">This is a container div.</div>
+  <div class="highlight">This is a highlighted div.</div>
 
-        <figure>
-            <img src="image.jpg" alt="Example image">
-            <figcaption>This is an example image with an alt attribute.</figcaption>
-        </figure>
-    </main>
+  <!-- Список с 3 элементами -->
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ul>
 
+  <!-- Секция с элементами и атрибутами -->
+  <section>
+    <a href="https://example.com" target="_blank">Visit Example</a>
+    <img src="https://st5.depositphotos.com/67536968/83709/i/450/depositphotos_837097544-stock-photo-oscar-piastri-aus-mclaren-formula.jpg" alt="Example image">
+  </section>
+
+  <button onclick="changeColor()">Change H1 Color</button>
+  <button onclick="resetColor()">Reset H1 Color</button>
+  <button onclick="changeParagraphColor()">Change Dark Paragraph Color</button>
+  <button onclick="resetParagraphColor()">Reset Dark Paragraph Color</button>
+  <button onclick="toggleParagraphColor()">Toggle Dark Paragraph Color</button>
+
+  <script src="script.js"></script>
 </body>
 </html>

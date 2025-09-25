@@ -3,70 +3,82 @@ Author: Nikolai Podkorytov
 Date: 2025-09-19
 */
 
-/* ====== Color Palette: Calm & Professional ====== */
-:root {
-    --background: #f4f6f8;
-    --primary: #1e3a8a;
-    --secondary: #64748b;
-    --accent: #3b82f6;
-}
-
-/* ====== Element Selectors ====== */
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--background);
-    color: var(--secondary);
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6;
-}
-
+/* Заголовки */
 h1 {
-    color: var(--primary);
+  color: #2c3e50;
+  font-size: 2em;
 }
 
+h1,
+h2,
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Параграфы */
 p {
-    margin-bottom: 1em;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  color: #34495e;
 }
 
-/* ====== Class Selectors ====== */
+/* Классы */
 .box {
-    border: 2px solid var(--primary);
-    padding: 10px;
-    background-color: white;
+  padding: 10px;
+  border: 2px solid #2980b9;
+  background-color: #ecf0f1;
 }
 
 .highlight {
-    background-color: var(--accent);
-    color: white;
-    padding: 10px;
+  padding: 10px;
+  background-color: #f9e79f;
+  border-left: 5px solid #f1c40f;
 }
 
-/* ====== ID Selector ====== */
+.container {
+  padding: 10px;
+  border: 1px dashed #7f8c8d;
+  margin-bottom: 10px;
+}
+
+/* ID селекторы */
 #special-message {
-    font-weight: bold;
-    color: var(--accent);
+  font-weight: bold;
+  color: #c0392b;
 }
 
-/* ====== Group Selectors ====== */
-h1, h2, h3 {
-    font-family: 'Segoe UI', sans-serif;
-    margin-bottom: 0.5em;
+#dark-paragraph {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 8px;
+  border-radius: 5px;
 }
 
-/* ====== Descendant Selectors ====== */
+/* Списки */
+ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
 section ul li {
-    list-style-type: square;
-    color: var(--primary);
+  color: #27ae60;
+  list-style-type: square;
 }
 
-/* ====== Attribute Selectors ====== */
+/* Атрибутные селекторы */
 a[target="_blank"] {
-    color: var(--accent);
-    text-decoration: underline;
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+a[target="_blank"]:hover {
+  text-decoration: underline;
 }
 
 img[alt] {
-    border: 3px solid var(--secondary);
-    max-width: 200px;
+  display: block;
+  max-width: 200px;
+  margin: 10px 0;
+  border: 1px solid #7f8c8d;
 }
