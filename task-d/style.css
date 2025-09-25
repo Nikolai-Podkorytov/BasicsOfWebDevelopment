@@ -16,13 +16,11 @@ h3 {
   margin-bottom: 10px;
 }
 
-
 p {
   font-family: Arial, sans-serif;
   line-height: 1.4;
   color: #34495e;
 }
-
 
 .box {
   padding: 10px;
@@ -42,7 +40,6 @@ p {
   margin-bottom: 10px;
 }
 
-
 #special-message {
   font-weight: bold;
   color: #c0392b;
@@ -55,7 +52,6 @@ p {
   border-radius: 5px;
 }
 
-
 ul {
   margin: 10px 0;
   padding-left: 20px;
@@ -65,7 +61,6 @@ section ul li {
   color: #27ae60;
   list-style-type: square;
 }
-
 
 a[target="_blank"] {
   color: #e74c3c;
@@ -79,6 +74,33 @@ a[target="_blank"]:hover {
 img[alt] {
   display: block;
   max-width: 200px;
-  margin: 10px 0;
+  margin: 10px auto; /* чтобы картинка была по центру */
   border: 1px solid #7f8c8d;
+}
+
+/* === Центрирование всей страницы === */
+body {
+  display: flex;
+  flex-direction: column; /* элементы сверху вниз */
+  justify-content: center; /* центр по вертикали */
+  align-items: center;     /* центр по горизонтали */
+  min-height: 100vh;       /* на всю высоту окна */
+  margin: 0;
+  text-align: center;      /* текст по центру */
+}
+
+/* Чтобы кнопки были красиво по центру */
+button {
+  margin: 5px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2980b9;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1f6391;
 }
