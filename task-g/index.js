@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <td>${fields.email.value.trim()}</td>
       <td>${fields.phone.value.trim()}</td>
       <td>${fields.birth.value}</td>
+      <td>${fields.terms.checked ? 'Yes' : 'No'}
     `;
     tbody.appendChild(row);
 

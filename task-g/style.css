@@ -246,3 +246,13 @@ small.form-text {
   color: #555;
   font-size: 0.8rem;
 }
+.table thead th:nth-child(1),
+.table tbody td:nth-child(1) {
+  width: 30%;
+}
+
+.table thead th:nth-child(n+2),
+.table tbody td:nth-child(n+2) {
+  width: 14%;
+  text-align: center;
+}
