@@ -1,0 +1,109 @@
+<!--
+  index.html
+  Author: Nikolai Podkorytov
+  Date: 2025-10-31
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Participant Registration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="index.js"></script>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white py-6 text-center shadow">
+    <h1 class="text-2xl font-bold">Participant Registration</h1>
+  </header>
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto px-4 md:px-16 py-6">
+
+    <!-- Top row: Student info + Form -->
+    <div class="flex flex-col md:flex-row gap-6 mb-6">
+
+      <!-- Student info -->
+      <section class="bg-white border border-gray-300 rounded-lg p-4 shadow flex-1" aria-label="Information">
+        <h2 class="font-semibold text-lg mb-2">Information</h2>
+        <p><span class="font-medium">Nikolai Podkorytov</span></p>
+        <p><span class="text-gray-600">AITS24P/AITS23P</span></p>
+      </section>
+
+      <!-- Form -->
+      <section class="bg-white border border-gray-300 rounded-lg p-4 shadow flex-2" aria-label="Registration Form">
+        <h2 class="font-semibold text-lg mb-4">Add New Participant</h2>
+        <form id="registrationForm" novalidate class="space-y-4">
+          <input type="hidden" id="timestamp" name="timestamp">
+
+          <!-- Full Name -->
+          <div>
+            <label for="fullName" class="block font-medium mb-1">Full Name</label>
+            <input id="fullName" name="fullName" type="text" placeholder="First and Last Name"
+                   class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <div class="text-red-600 text-sm mt-1" id="errName"></div>
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block font-medium mb-1">Email</label>
+            <input id="email" name="email" type="email" placeholder="example@email.com"
+                   class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <div class="text-red-600 text-sm mt-1" id="errEmail"></div>
+          </div>
+
+          <!-- Phone -->
+          <div>
+            <label for="phone" class="block font-medium mb-1">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="+358401234567"
+                   class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <div class="text-red-600 text-sm mt-1" id="errPhone"></div>
+          </div>
+
+          <!-- Birth -->
+          <div>
+            <label for="birth" class="block font-medium mb-1">Birth Date</label>
+            <input id="birth" name="birth" type="date"
+                   class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <div class="text-red-600 text-sm mt-1" id="errBirth"></div>
+          </div>
+
+          <!-- Terms -->
+          <div class="flex items-center">
+            <input id="terms" name="terms" type="checkbox" class="mr-2">
+            <label for="terms" class="font-medium">I accept the terms and conditions</label>
+          </div>
+          <div class="text-red-600 text-sm mt-1" id="errTerms"></div>
+
+          <!-- Buttons -->
+          <div class="flex gap-2">
+            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Submit</button>
+            <button type="reset" class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">Clear</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <!-- Table for submitted data -->
+    <div class="bg-white border border-gray-300 rounded-lg p-4 shadow overflow-x-auto">
+      <table class="w-full border-collapse">
+        <thead class="bg-blue-900 text-white">
+          <tr>
+            <th class="p-3 text-left">Timestamp</th>
+            <th class="p-3 text-center">Full Name</th>
+            <th class="p-3 text-center">Email</th>
+            <th class="p-3 text-center">Phone</th>
+            <th class="p-3 text-center">Birth Date</th>
+            <th class="p-3 text-center">Accepted Terms</th>
+          </tr>
+        </thead>
+        <tbody id="dataTable" class="divide-y divide-gray-300"></tbody>
+      </table>
+    </div>
+
+  </main>
+
+</body>
+</html>
