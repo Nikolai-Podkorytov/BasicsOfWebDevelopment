@@ -1,6 +1,6 @@
 // index.js
 // Author: Nikolai Podkorytov
-// Date: 2025-10-31
+// Date: 2025-10-31 up
 // Handles registration form validation and table row creation
 
 document.addEventListener('DOMContentLoaded', function () {
