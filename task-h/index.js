@@ -1,11 +1,11 @@
 // index.js
 // Author: Nikolai Podkorytov
-// Date: 2025-10-24
+// Date: 2025-10-31
 // Handles registration form validation and table row creation
 
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('registrationForm');
-  const tbody = document.querySelector('#dataTable tbody');
+  const tbody = document.querySelector('#dataTable');
 
   const fields = {
     name: document.getElementById('fullName'),
@@ -90,13 +90,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // Create new table row
     const row = document.createElement('tr');
     row.innerHTML = `
-      <td>${timestamp}</td>
-      <td>${fields.name.value.trim()}</td>
-      <td>${fields.email.value.trim()}</td>
-      <td>${fields.phone.value.trim()}</td>
-      <td>${fields.birth.value}</td>
-      <td>${fields.terms.checked ? 'Yes' : 'No'}
-    `;
+  <td>${timestamp}</td>
+  <td class="text-center">${fields.name.value.trim()}</td>
+  <td class="text-center">${fields.email.value.trim()}</td>
+  <td class="text-center">${fields.phone.value.trim()}</td>
+  <td class="text-center">${fields.birth.value}</td>
+  <td class="text-center">${fields.terms.checked ? 'Yes' : 'No'}</td>
+`;
     tbody.appendChild(row);
 
     // Reset form
