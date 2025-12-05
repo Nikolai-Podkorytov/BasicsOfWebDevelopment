@@ -1,0 +1,143 @@
+<!-- 
+    Author: Nikolai Podkorytov
+    Date: 2025-12-04
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DriveSafe | Order</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-50">
+
+    <!-- HEADER (same as index) -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-20">
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <a href="index.html"><h1 class="text-2xl font-bold text-green-600">DriveSafe</h1></a>
+
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html#about" class="hover:text-green-600">About</a>
+                <a href="index.html#features" class="hover:text-green-600">Features</a>
+                <a href="index.html#how" class="hover:text-green-600">How It Works</a>
+                <a href="index.html#testimonials" class="hover:text-green-600">Testimonials</a>
+                <a href="catalog.html" class="hover:text-green-600">Catalog</a>
+                <a href="order.html" class="hover:text-green-600 font-semibold">Order</a>
+            </nav>
+
+            <a href="order.html"
+                class="hidden md:inline-block bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">
+                Book Now
+            </a>
+
+            <button id="menu-btn" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-7 h-7 text-green-700">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 5.75h16.5M3.75 12h16.5m-16.5 6.25h16.5" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <nav class="flex flex-col items-center py-4 space-y-2 px-4">
+                <a href="index.html#about" class="hover:text-green-600">About</a>
+                <a href="index.html#features" class="hover:text-green-600">Features</a>
+                <a href="index.html#how" class="hover:text-green-600">How It Works</a>
+                <a href="index.html#testimonials" class="hover:text-green-600">Testimonials</a>
+                <a href="catalog.html" class="hover:text-green-600">Catalog</a>
+                <a href="order.html" class="hover:text-green-600 font-semibold">Order</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mt-24 max-w-3xl mx-auto px-4 pb-20">
+
+        <section class="text-center mb-10">
+            <h1 class="text-4xl font-bold text-green-700">Place Your Rental Order</h1>
+            <p class="text-gray-600 mt-2">Fill out the form below to request a rental. We’ll confirm your order shortly.</p>
+        </section>
+
+        <!-- ORDER FORM -->
+        <form action="success.html" method="GET" class="bg-white p-6 rounded-xl shadow-lg space-y-6">
+
+            <h2 class="text-2xl font-bold text-blue-700">Customer Information</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                    <label class="font-semibold">Full Name</label>
+                    <input type="text" required class="w-full border p-2 rounded" name="name">
+                </div>
+                <div>
+                    <label class="font-semibold">Email</label>
+                    <input type="email" required class="w-full border p-2 rounded" name="email">
+                </div>
+                <div>
+                    <label class="font-semibold">Phone</label>
+                    <input type="tel" required class="w-full border p-2 rounded" name="phone">
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-blue-700 mt-6">Rental Details</h2>
+
+            <div>
+                <label class="font-semibold">Item to Rent</label>
+                <select required class="w-full border p-2 rounded" name="item">
+                    <option value="">Select item…</option>
+                    <option>4K Dashcam</option>
+                    <option>LED Safety Beacon</option>
+                    <option>Breath Alcohol Tester</option>
+                    <option>Vehicle First Aid Kit</option>
+                    <option>OBD-II Scanner</option>
+                    <option>Tire Pressure Kit</option>
+                </select>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                    <label class="font-semibold">Start Date</label>
+                    <input type="date" required class="w-full border p-2 rounded" name="start">
+                </div>
+                <div>
+                    <label class="font-semibold">End Date</label>
+                    <input type="date" required class="w-full border p-2 rounded" name="end">
+                </div>
+            </div>
+
+            <div>
+                <label class="font-semibold">Quantity</label>
+                <input type="number" min="1" required class="w-full border p-2 rounded" name="qty">
+            </div>
+
+            <div>
+                <label class="font-semibold">Additional Notes</label>
+                <textarea class="w-full border p-2 rounded" rows="4" name="notes"></textarea>
+            </div>
+
+            <div class="flex items-center space-x-2">
+                <input type="checkbox" required>
+                <label>I accept the rental terms and privacy policy.</label>
+            </div>
+
+            <button
+                class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+                Submit Rental Request
+            </button>
+
+        </form>
+
+    </main>
+
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", () => {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+
+</html>

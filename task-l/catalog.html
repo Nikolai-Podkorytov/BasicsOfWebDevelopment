@@ -1,0 +1,194 @@
+<!-- 
+    Author: Nikolai Podkorytov
+    Date: 2025-12-05
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DriveSafe Rentals | Catalog</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-50">
+
+    <!-- HEADER -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-20">
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <a href="index.html">
+                <h1 class="text-2xl font-bold text-green-600">DriveSafe</h1>
+            </a>
+
+            <!-- Desktop Nav (updated to match index.html exactly) -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html#about" class="hover:text-green-600">About</a>
+                <a href="index.html#features" class="hover:text-green-600">Features</a>
+                <a href="index.html#how" class="hover:text-green-600">How It Works</a>
+                <a href="index.html#testimonials" class="hover:text-green-600">Testimonials</a>
+                <a href="catalog.html" class="hover:text-green-600 font-semibold">Catalog</a>
+                <a href="order.html" class="hover:text-green-600 font-semibold">Order</a>
+            </nav>
+
+            <a href="index.html"
+                class="hidden md:inline-block bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">
+                Home
+            </a>
+        </div>
+    </header>
+
+    <main class="mt-20 mb-20 px-6">
+
+        <!-- PAGE INTRO -->
+        <section class="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
+            <h1 class="text-4xl font-bold mb-4 text-green-700">Rental Catalog</h1>
+            <p class="text-lg text-gray-600">
+                Browse our selection of certified driving-safety rental equipment. All items come tested, calibrated,
+                and ready for same-day pickup.
+            </p>
+        </section>
+
+        <!-- REQUIRED IMAGE: Catalog.png -->
+        <section class="max-w-3xl mx-auto mb-14" data-aos="zoom-in">
+            <img src="Catalog.png" alt="Example of rental equipment available in DriveSafe catalog"
+                class="rounded-2xl shadow-lg w-full object-cover aspect-video" loading="lazy">
+        </section>
+
+        <!-- PRODUCT GRID -->
+        <section class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Available Items</h2>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- CARD TEMPLATE (6 items) -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://ww1.prweb.com/prfiles/2018/04/12/15403371/blackvue-dr900s-2ch-4k-uhd-cloud-dash-cam-in-car.jpg"
+                        alt="Premium dashcam rental unit" class="w-full aspect-video object-cover" loading="lazy">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">4K Dashcam</h3>
+                        <p class="text-gray-600 mb-3">Ultra-wide lens, night vision, GPS tagging. Ideal for professional
+                            drivers.</p>
+                        <p class="font-bold text-blue-700">39 €/d — 199 €/wk</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://m.media-amazon.com/images/I/71TGwQSmZsL._AC_SY300_SX300_QL70_FMwebp_.jpg"
+                        alt="Magnetic LED road safety beacon" class="w-full aspect-video object-cover" loading="lazy">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">LED Safety Beacon</h3>
+                        <p class="text-gray-600 mb-3">High-visibility magnetic alert beacon. Rechargeable and
+                            weatherproof.</p>
+                        <p class="font-bold text-blue-700">12 €/d — 49 €/wk</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT4Ab3mEwM-vTGsSb3Nd6t7txSqTe-EZ-Jog&s"
+                        alt="Professional breath alcohol tester device" class="w-full aspect-video object-cover"
+                        loading="lazy">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Breath Alcohol Tester</h3>
+                        <p class="text-gray-600 mb-3">Certified police-grade sensor. Fast, reliable, and calibrated
+                            weekly.</p>
+                        <p class="font-bold text-blue-700">25 €/d — 120 €/wk</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhFuBigZxQfRKpX01cvhV2wjc5cqBN41NCWQ&s"
+                        alt="Fully equipped vehicle first aid kit" class="w-full aspect-video object-cover"
+                        loading="lazy">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Vehicle First Aid Kit</h3>
+                        <p class="text-gray-600 mb-3">Complete kit with bandages, gloves, thermal blanket, and tools.
+                        </p>
+                        <p class="font-bold text-blue-700">8 €/d — 29 €/wk</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://xtrons.co.uk/wp-content/uploads/2024/12/obd01s-1.jpg"
+                        alt="OBD-II scanner for diagnostics" class="w-full aspect-video object-cover" loading="lazy">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">OBD-II Scanner</h3>
+                        <p class="text-gray-600 mb-3">Diagnose engine errors, fuel efficiency, and real-time telemetry.
+                        </p>
+                        <p class="font-bold text-blue-700">15 €/d — 59 €/wk</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://computech.com/wp-content/uploads/2018/12/Tire-Minder-14-Wheel-Kit-A.jpg"
+                        alt="Digital tire pressure measurement kit" class="w-full aspect-video object-cover"
+                        loading="lazy">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold mb-2 text-green-700">Tire Pressure Kit</h3>
+                        <p class="text-gray-600 mb-3">Accurate digital gauge with compressor adapter for quick checks.
+                        </p>
+                        <p class="font-bold text-blue-700">10 €/d — 45 €/wk</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- VIDEO SECTION -->
+        <section class="max-w-4xl mx-auto mt-20">
+            <h2 class="text-3xl font-bold text-center mb-6">Quick Safety Overview</h2>
+
+            <div class="rounded-2xl overflow-hidden shadow-lg">
+                <video controls poster="example.jpg" class="w-full aspect-video rounded-2xl shadow-lg">
+                    <source src="vid.mp4" type="video/mp4">
+                    <track src="captions.vtt" kind="captions" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <p class="text-center text-gray-600 mt-3 text-sm">
+                Learn how to use our equipment safely and effectively.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-10">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4 text-center md:text-left">
+            <div>
+                <h3 class="text-xl font-bold mb-2 text-white">DriveSafe</h3>
+                <p>Empowering safer roads through smarter driving.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-2 text-white">Quick Links</h4>
+                <ul class="space-y-1">
+                    <li><a href="index.html#about" class="hover:text-green-500">About</a></li>
+                    <li><a href="index.html#features" class="hover:text-green-500">Features</a></li>
+                    <li><a href="index.html#how" class="hover:text-green-500">How It Works</a></li>
+                    <li><a href="catalog.html" class="hover:text-green-500">Catalog</a></li>
+                    <li><a href="order.html" class="hover:text-green-500 font-semibold">Order</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-2 text-white">Contact</h4>
+                <p>Email: support@drivesafe.com</p>
+                <p>Phone: +358 123 456 789</p>
+                <div class="flex justify-center md:justify-start space-x-4 mt-3">
+                    <a href="#"><img src="https://img.icons8.com/fluency/48/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram"></a>
+                    <a href="#"><img src="https://img.icons8.com/fluency/48/twitterx.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-sm mt-10">&copy; 2025 DriveSafe. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true });</script>
+
+</body>
+
+</html>
