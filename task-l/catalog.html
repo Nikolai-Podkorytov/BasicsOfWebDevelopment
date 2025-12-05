@@ -23,7 +23,7 @@
                 <h1 class="text-2xl font-bold text-green-600">DriveSafe</h1>
             </a>
 
-            <!-- Desktop Nav (updated to match index.html exactly) -->
+            <!-- Desktop Nav -->
             <nav class="hidden md:flex space-x-6">
                 <a href="index.html#about" class="hover:text-green-600">About</a>
                 <a href="index.html#features" class="hover:text-green-600">Features</a>
@@ -33,10 +33,33 @@
                 <a href="order.html" class="hover:text-green-600 font-semibold">Order</a>
             </nav>
 
+            <!-- Home Button -->
             <a href="index.html"
                 class="hidden md:inline-block bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">
                 Home
             </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-7 h-7 text-green-700">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 5.75h16.5M3.75 12h16.5m-16.5 6.25h16.5" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <nav class="flex flex-col items-center py-4 space-y-2 px-4">
+                <a href="index.html#about" class="hover:text-green-600">About</a>
+                <a href="index.html#features" class="hover:text-green-600">Features</a>
+                <a href="index.html#how" class="hover:text-green-600">How It Works</a>
+                <a href="index.html#testimonials" class="hover:text-green-600">Testimonials</a>
+                <a href="catalog.html" class="hover:text-green-600 font-semibold">Catalog</a>
+                <a href="order.html" class="hover:text-green-600 font-semibold">Order</a>
+                <a href="index.html" class="hover:text-green-600">Home</a>
+            </nav>
         </div>
     </header>
 
@@ -188,6 +211,13 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init({ duration: 800, once: true });</script>
+
+    <!-- Burger Menu Script -->
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", () => {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
 
 </body>
 
